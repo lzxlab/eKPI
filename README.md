@@ -6,19 +6,17 @@ eKPI could be installed from GitHub. [conda](https://anaconda.org/anaconda/conda
 ```
 git clone https://github.com/lzxlab/eKPI
 cd eKPI
-pip install -r requirements.txt
+conda env create -f environment.yaml
 ```
 # Python Dependencies
 ```
-dask=2024.8.1
-pandas=2.2.2
-numpy=1.23.3
-scikit-learn=1.1.2
-imblearn=0.11.0
-xgboost=2.0.0
-joblib=1.2.0
-matplotlib=3.6.0
-seaborn=0.12.0
+dask=2025.1.0
+pandas=2.2.3
+numpy=2.2.2
+scikit-learn=1.6.1
+imblearn=0.0
+xgboost=2.1.3
+joblib=1.4.2
 ```
 # How to run
 The eKPI is a easy-to-use command-line package.The model could be run by the following command:
@@ -26,13 +24,13 @@ The eKPI is a easy-to-use command-line package.The model could be run by the fol
 cd path_to_eKPI
 python predict.py kinase_family input_file output_path
 ```
-Two parameters are needed: `kinase_family` is the kinase family that selected for prediction; `input_file` is a common file with correlation coefficients in each dataset; `output_path` is the path to work and write and results.
+Two parameters are needed: `kinase_family` is the kinase family that selected for prediction; `input_file` is a common file with correlation coefficients in each dataset; `output_path` is the path to work and write results.
 
 # Example of input file and output result
-The `example_output` fold containing the examples of input file and output results: the `AGC_example.csv` is an example of input file; the `result.csv` is the output results containing the predict label and probability that represents the confidence of the model prediction; the `runInfo.txt` file records the running information.
+The `example` fold containing the examples of input file and output results: the `AGC_example.csv` is an example of input file; the `result.csv` is the output results containing the predict label and probability that represents the confidence of the model prediction; the `runInfo.txt` file records the running information.
 # Example running code
 ```
 cd path_to_eKPI
-python predict.py example_output/inputFile.fasta example_output/
+python predict.py AGC ./example/AGC_example.csv ./example
 ```
 
