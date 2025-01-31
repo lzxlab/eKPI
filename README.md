@@ -29,7 +29,7 @@ python predict.py kinase_family input_file output_path
 Two parameters are needed: `kinase_family` is the kinase family that selected for prediction; `input_file` is a common file with correlation coefficients in each dataset; `output_path` is the path to work and write and results.
 
 # Example of input file and output result
-The `example_output` fold containing the examples of input file and output results: the `inputFile.csv` is an example of fasta file pf input; the `merged.data.txt` is the merged output results; the `runInfo.txt` file records the running information.
+The `example_output` fold containing the examples of input file and output results: the `AGC_example.csv` is an example of input file; the `result.csv` is the output results containing the predict label and probability that represents the confidence of the model prediction; the `runInfo.txt` file records the running information.
 # Example running code
 ```
 cd path_to_eKPI
