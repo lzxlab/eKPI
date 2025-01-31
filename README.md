@@ -2,7 +2,7 @@
 # Overview
 Phosphorylation in eukaryotic cells plays a key role in regulating cell signaling and disease progression. Despite the ability to detect thousands of phosphosites in a single experiment using high-throughput technologies, the kinases responsible for regulating these sites are largely unidentified. To solve this, we collected the quantitative data at the transcriptional, protein, and phosphorylation levels of 10,159 samples from 23 tumor datasets and 15 adjacent normal tissue datasets. Building on the KPS correlations of different datasets as predictive features, we have developed an innovative approach that employed an oversampling method combined with and XGBoost algorithm (SMOTE-XGBoost) to predict potential kinase-specific phosphorylation sites in proteins.
 # Install and use
-eKPI could be installed from GitHub. [conda](https://anaconda.org/anaconda/conda) is required to easily install the package. A webserver version of this model's prediction result could be accessed from https://ekpi.omicsbio.info/.
+eKPI could be installed from GitHub. [conda](https://anaconda.org/anaconda/conda) is required to easily install the package. A webserver version of this model's prediction results could be accessed from https://ekpi.omicsbio.info/.
 ```
 git clone https://github.com/lzxlab/eKPI
 cd eKPI
